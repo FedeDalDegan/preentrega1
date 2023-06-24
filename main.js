@@ -6,7 +6,7 @@ function bienvenida(){
     let salu2 = ("Bienvenido " + usuario);
 
     if(usuario == ""){
-        alert("Debe ingresar un nombre.");
+        alert("Bienvenido misterioso.");
         document.write("Ningun nombre fue especificado.");
         }else{
             alert(salu2);
@@ -18,6 +18,8 @@ function bienvenida(){
 function calculadora(primerNum, segundoNum, operacion) {
     if(operacion == "/" && segundoNum == 0){
         alert("No es posible dividir por 0");
+    }else if (isNaN(primerNum || segundoNum)){
+        alert("Debe ingresar un numero entero.");
     }else if(operacion == "+"){
         return primerNum + segundoNum;
     }else if(operacion == "-"){

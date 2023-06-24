@@ -1,3 +1,5 @@
+console.log("Mi primera preentrega. Federico 2023.");
+
 bienvenida();
 
 function bienvenida(){
@@ -16,6 +18,7 @@ function bienvenida(){
 }
 
 function calculadora(primerNum, segundoNum, operacion) {
+
     if(operacion == "/" && segundoNum == 0){
         alert("No es posible dividir por 0");
     }else if (isNaN(primerNum || segundoNum)){
@@ -36,6 +39,7 @@ function calculadora(primerNum, segundoNum, operacion) {
 let salir = "ESC";
 
 while (salir != "Y" || salir != "y") {
+    
     alert(calculadora(parseFloat(prompt("Ingrese un numero entero: ")),
     (parseFloat(prompt("Ingrese un segundo numero entero: "))), 
     prompt("Ingrese la operacion (+, -, * o /)")));
